@@ -13,7 +13,7 @@ struct LoanTrackerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoansView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
