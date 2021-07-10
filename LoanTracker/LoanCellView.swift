@@ -18,10 +18,18 @@ struct LoanCellView: View {
         HStack {
             VStack(alignment: .leading, spacing: 5) {
                 Text(name)
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                
                 Text(amount.toCurrency)
+                    .font(.title2)
+                    .fontWeight(.light)
             }
             Spacer()
+            
             Text(date.longDate)
+                .font(.subheadline)
+                .foregroundColor(.secondary)
         }
         
     }

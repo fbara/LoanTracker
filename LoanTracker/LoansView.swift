@@ -16,11 +16,13 @@ struct LoansView: View {
         animation: .default)
     private var loans: FetchedResults<Loan>
     
+    @State var isAddLoanShowing = false
+    
     var body: some View {
         NavigationView {
             List {
                 ForEach(loans) { loan in
-                    Text(loan.name ?? "Unknown")
+                    LoanCellView(name: loan.name ?? "", amount: loan.totalAmount, date: loan.dueDate ?? Date())
                 }
                 .onDelete(perform: deleteItems)
             }
@@ -28,14 +30,19 @@ struct LoansView: View {
             .navigationTitle("All Loans")
             .navigationBarItems(trailing:
                 Button {
-                    addItem()
+                    isAddLoanShowing = true
                 } label: {
                     Image(systemName: "plus")
                         .font(.title)
                 })
         }
         .accentColor(Color(.label))
+        .sheet(isPresented: $isAddLoanShowing) {
+            AddLoanView(viewModel: AddLoanViewModel(isAddLoanShowing: $isAddLoanShowing))
+        }
     }
+    
+    
     
     private func addItem() {
         withAnimation {
@@ -66,13 +73,6 @@ struct LoansView: View {
         }
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

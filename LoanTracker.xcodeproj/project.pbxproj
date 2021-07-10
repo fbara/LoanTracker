@@ -16,6 +16,8 @@
 		ADF980142698D1C100C4BD34 /* LoanCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF980132698D1C100C4BD34 /* LoanCellView.swift */; };
 		ADF980162698D57900C4BD34 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF980152698D57900C4BD34 /* Date+Extensions.swift */; };
 		ADF980182698D67400C4BD34 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF980172698D67400C4BD34 /* Double+Extensions.swift */; };
+		ADF9801A2698D91A00C4BD34 /* AddLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF980192698D91A00C4BD34 /* AddLoanView.swift */; };
+		ADF9801C2698DBCB00C4BD34 /* AddLoanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9801B2698DBCB00C4BD34 /* AddLoanViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		ADF980132698D1C100C4BD34 /* LoanCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCellView.swift; sourceTree = "<group>"; };
 		ADF980152698D57900C4BD34 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		ADF980172698D67400C4BD34 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		ADF980192698D91A00C4BD34 /* AddLoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoanView.swift; sourceTree = "<group>"; };
+		ADF9801B2698DBCB00C4BD34 /* AddLoanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLoanViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				AD14CB9126977F86006B7E08 /* Assets.xcassets */,
 				AD14CB9626977F86006B7E08 /* Persistence.swift */,
 				ADF980152698D57900C4BD34 /* Date+Extensions.swift */,
+				ADF980192698D91A00C4BD34 /* AddLoanView.swift */,
+				ADF9801B2698DBCB00C4BD34 /* AddLoanViewModel.swift */,
 				ADF980172698D67400C4BD34 /* Double+Extensions.swift */,
 				AD14CB9826977F86006B7E08 /* LoanTracker.xcdatamodeld */,
 				AD14CB9326977F86006B7E08 /* Preview Content */,
@@ -154,8 +160,10 @@
 			files = (
 				AD14CB9726977F86006B7E08 /* Persistence.swift in Sources */,
 				AD14CB9026977F85006B7E08 /* LoansView.swift in Sources */,
+				ADF9801A2698D91A00C4BD34 /* AddLoanView.swift in Sources */,
 				ADF980182698D67400C4BD34 /* Double+Extensions.swift in Sources */,
 				ADF980142698D1C100C4BD34 /* LoanCellView.swift in Sources */,
+				ADF9801C2698DBCB00C4BD34 /* AddLoanViewModel.swift in Sources */,
 				AD14CB9A26977F86006B7E08 /* LoanTracker.xcdatamodeld in Sources */,
 				AD14CB8E26977F85006B7E08 /* LoanTrackerApp.swift in Sources */,
 				ADF980162698D57900C4BD34 /* Date+Extensions.swift in Sources */,
